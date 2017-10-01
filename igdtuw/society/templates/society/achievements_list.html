@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h2>SOCIETY LIST</h2><br>
+      <ul>
+          {% for society in object_list %}
+          <li><h3>{{society.soc_no}}</h3><h5><br>{{society.title}}<br>{{society.image}}<br>{{society.desc}}</h5></li>
+
+          {% endfor %}
+
+
+      </ul>
+  </body>
+</html>
