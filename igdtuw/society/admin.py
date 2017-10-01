@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Soclist,Events,Contact,Faq,Achievements,Anouncements
+from .models import Soclist,Events,Faq,Contact,Achievements,Anouncements
 # Register your models here.
 admin.site.register(Soclist)
 admin.site.register(Events)
