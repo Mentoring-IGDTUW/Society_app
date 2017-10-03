@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import ModelForm
 
 class Soclist(models.Model):
     name=models.CharField(max_length=50)
@@ -17,6 +18,9 @@ class Anouncements(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
 
 class Events(models.Model):
     soc_no=models.ForeignKey(Anouncements,on_delete=models.CASCADE)

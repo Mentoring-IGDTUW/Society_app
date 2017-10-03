@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+
+            <a href="{% url 'anouncements_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="{% url 'anouncementslist' %}">Anouncements</a></h1> <br><br>
+
+
+            <a href="{% url 'soclist_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="{% url 'soclistlist' %}">soclist</a></h1><br><br>
+
+            <a href="{% url 'faq_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="{% url 'faqlist' %}">faq</a></h1><br><br>
+
+            <a href="{% url 'contact_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="{% url 'contactlist' %}">contact</a></h1><br><br>
+
+
+            <a href="{% url 'events_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="{% url 'eventslist' %}">events</a></h1><br><br>
+
+
+            <a href="{% url 'achievements_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="{% url 'achievementslist' %}">achievements</a></h1><br><br>
+
+
+
+
+
+
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
