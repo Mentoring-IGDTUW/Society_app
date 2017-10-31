@@ -23,7 +23,4 @@ urlpatterns=[
     url(r'^contact/$',ContactList.as_view(), name='contactlist'),
     url(r'^achievements/add/$', views.achievements_add, name='achievements_add'),
     url(r'^achievements/$',AchievementsList.as_view(),name='achievementslist'),
-    url(r'$',views.index, name='index'),
-
-
-]
+    url(r'$',views.index, name='index'),]
